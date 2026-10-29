@@ -6,3 +6,43 @@
 .detail-bowl{background:white;border:1px solid #dfe6ef;border-radius:9px;padding:14px;margin-bottom:10px;font-size:16px;line-height:1.7}
 .swipe-hint{padding:16px;text-align:center;color:#667487;background:#eaf0f6;border-radius:9px;font-size:14px}
 #deliveryAction{padding-top:12px}
+/* v3: landscape iPad, two independently contained workspaces */
+@media (orientation:landscape) and (min-width:741px){
+ body.pos-active{height:100dvh;overflow:hidden}
+ body.pos-active header{height:56px;padding:5px 14px}
+ body.pos-active header strong{font-size:18px}
+ body.pos-active header small{display:none}
+ body.pos-active main{height:calc(100dvh - 56px);max-width:none;padding:8px;overflow:hidden}
+ body.pos-active .split{height:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:8px;align-items:stretch}
+ body.pos-active .pos-column{height:100%;min-height:0;min-width:0;display:flex;flex-direction:column}
+ body.pos-active .pos-column>.panel{margin:0;height:100%;min-height:0;display:flex;flex-direction:column;padding:10px;overflow:hidden}
+ body.pos-active .panel h2{font-size:17px;margin-bottom:7px;padding-bottom:7px;flex-shrink:0}
+ body.pos-active .panel h3{font-size:13px;margin:6px 0 5px}
+ body.pos-active button{min-height:36px;padding:6px 9px;font-size:13px}
+ body.pos-active input,body.pos-active select{padding:7px;font-size:14px}
+ body.pos-active .toprow{padding:3px 0;font-size:13px}
+ body.pos-active .toprow button{min-width:35px}
+ body.pos-active .bowl{padding:7px;margin-bottom:5px}
+ body.pos-active .bowl p{margin:3px 0}
+ body.pos-active .ticket{padding:8px;margin-bottom:6px}
+ body.pos-active .ticket .number{font-size:20px}
+ body.pos-active .total{font-size:23px}
+ body.pos-active .huge{font-size:min(18vh,80px)}
+ body.pos-active .handoff-layout,body.pos-active .cashier-layout,body.pos-active .checkout-layout{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden;gap:6px}
+ body.pos-active .handoff-top{flex-shrink:0}
+ body.pos-active .tabs{margin-bottom:5px}
+ body.pos-active .handoff-list,body.pos-active .handoff-detail-list,body.pos-active .cart-list{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+ body.pos-active .handoff-detail{display:flex;flex-direction:column;min-height:0;flex:1;gap:5px}
+ body.pos-active .handoff-detail p{margin:0}
+ body.pos-active .detail-bowl{padding:9px;margin-bottom:6px;font-size:14px;line-height:1.4}
+ body.pos-active .handoff-footer,body.pos-active .cashier-footer,body.pos-active .checkout-footer{flex-shrink:0;background:white;padding-top:5px;border-top:1px solid #e4e9f0}
+ body.pos-active .cashier-controls{flex-shrink:0}
+ body.pos-active .cashier-controls>button{margin-top:5px}
+ body.pos-active .cashier-cart{flex:1;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+ body.pos-active .checkout-fields{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+ body.pos-active .checkout-fields label{margin:5px 0 3px}
+ body.pos-active .checkout-fields .row{gap:5px}
+ body.pos-active .checkout-layout>.row{flex-shrink:0}
+ body.pos-active .checkout-layout>label{margin:0;flex-shrink:0}
+ body.pos-active .checkout-layout .big{font-size:23px}
+}
