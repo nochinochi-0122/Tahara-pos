@@ -50,3 +50,10 @@
 /* v5: confirmation-free handoff with inline undo, no blocking dialog */
 .handoff-undo{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;border:1px solid #447b69;border-radius:10px;background:rgba(34,197,94,.08);font-size:.88rem;flex-wrap:wrap}
 .handoff-undo button{padding:7px 10px;white-space:nowrap}
+
+.bundle-discount{color:#087c52;font-weight:700;font-size:.9em}
+
+/* v7: first topping selection */
+.first-top-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:8px 0 12px}
+.first-top-grid button{min-height:43px;font-weight:700}
+.first-option{background:#fff;color:#262626;border:2px solid #b5a49a}
