@@ -57,3 +57,25 @@
 .first-top-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:8px 0 12px}
 .first-top-grid button{min-height:43px;font-weight:700}
 .first-option{background:#fff;color:#262626;border:2px solid #b5a49a}
+
+/* v8: Right cashier workspace scrolls independently; price and checkout stay visible */
+@media (orientation:landscape) and (min-width:741px){
+ body.pos-active .cashier-column>.panel{overflow:hidden}
+ body.pos-active .cashier-layout{overflow:hidden;min-height:0}
+ body.pos-active .cashier-controls{
+   flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;
+   -webkit-overflow-scrolling:touch;touch-action:pan-y;
+   overscroll-behavior-y:contain;padding:0 5px 14px 0;
+ }
+ body.pos-active .cashier-cart{
+   flex:0 1 28%;min-height:76px;overflow:hidden;
+   border-top:1px solid #e4e9f0;padding-top:4px;
+ }
+ body.pos-active .cashier-cart h3{flex-shrink:0}
+ body.pos-active .cashier-footer{
+   position:relative;z-index:2;flex:0 0 auto;
+   box-shadow:0 -3px 9px #17233314;
+ }
+ body.pos-active .cashier-footer .total{font-size:clamp(23px,2.8vw,34px)}
+ body.pos-active .cashier-controls .first-top-grid button{min-height:43px}
+}
