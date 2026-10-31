@@ -79,3 +79,21 @@
  body.pos-active .cashier-footer .total{font-size:clamp(23px,2.8vw,34px)}
  body.pos-active .cashier-controls .first-top-grid button{min-height:43px}
 }
+
+/* v9: payment method must be selected before entering amounts */
+.payment-prompt{font-size:16px;font-weight:800;margin:8px 0}
+.payment-choice{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.payment-button{min-height:85px!important;font-size:25px!important;font-weight:900;border:3px solid #b61d25;background:#fff8f8;color:#a71a23}
+.payment-button.paypay-button{border-color:#2773b7;background:#f1f8ff;color:#12609b}
+.payment-button.chosen{box-shadow:inset 0 0 0 3px currentColor;background:#fff0d8}
+.mixed-link{margin-top:12px;width:100%;background:#f4f5f8;font-size:12px}
+.payment-presets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}
+.payment-presets button{min-height:48px!important;font-weight:800}
+#paymentDetails h3{font-size:17px!important;margin:14px 0 7px}
+#paymentDetails input[type=number]{max-width:none;width:100%;font-size:21px!important;font-weight:700}
+.confirm-pay{display:flex!important;align-items:center;gap:8px;padding:8px;background:#f2f7fc;border-radius:8px}
+.ok-text{color:#087f65}.err-text{color:#b91c1c}
+.ticket-items{margin:7px 0;padding:8px;background:#f4f7fb;border-radius:8px;font-size:13px;line-height:1.55}
+.ticket-item+.ticket-item{border-top:1px solid #dfe5ee;margin-top:5px;padding-top:5px}
+.modal-close-row{display:flex;justify-content:flex-end;position:sticky;top:-20px;background:white;z-index:3;padding:3px 0 8px}
+.admin-close{background:#243448;color:white;border-color:#243448;margin-left:auto}
